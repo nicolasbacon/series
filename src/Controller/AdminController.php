@@ -12,6 +12,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class AdminController extends AbstractController
 {
     /**
+     * page home
      * @Route("", name="admin_home")
      */
     public function home()
