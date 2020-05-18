@@ -1,0 +1,14 @@
+{% extends 'layout.html.twig' %}
+{% block main %}
+<h1>Home !!! {{ title }}</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, atque consectetur deserunt doloribus earum enim, excepturi exercitationem minima neque nihil nulla ratione repellendus unde ut, velit! Dolores expedita incidunt suscipit.</p>
+
+    {% for serie in series %}
+        <p>{{ loop.index }} : {{ serie }}</p>
+    {% endfor %}
+
+
+{% endblock %}
+
+{% block title %}Series ! | Home{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'layout.html.twig' %}
+
+{% block main %}
+    <h2>Add a serie !</h2>
+
+    {# todo : afficher le formulaire d'ajout de la serie #}
+    {{ form_start(serieForm) }}
+
+    {{ form_row(serieForm.name) }}
+    {{ form_row(serieForm.overview) }}
+    {{ form_row(serieForm.tmdbId) }}
+
+    <button type="submit">Send !</button>
+    {{ form_end(serieForm) }}
+{% endblock %}
+
+{% block title %}Add a serie ! | {{ parent() }}{% endblock %}

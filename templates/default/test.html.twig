@@ -1,0 +1,17 @@
+{% extends 'layout.html.twig' %}
+{% block main %}
+    {{ content }}
+{% set colors=['red','blue','brown','black'] %}
+
+<ul>
+{% for color in colors %}
+    {% if color != 'brown' %}
+    <li>{{ color| capitalize}}</li>
+    {% endif %}
+{% endfor %}
+</ul>
+
+{% set num = 123456.456123 %}
+
+<p>{{ num|number_format(2, ',', ' ') }}</p>
+{% endblock %}
